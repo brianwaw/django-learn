@@ -15,7 +15,7 @@
     <div class="viewrooms">
         {% for room in rooms %}
         <div class="theroom">
-            <h5>{{room.id}} - <a href="/room/{{room.id}}">{{room.name}}</a></h5>
+            <h5>{{room.id}} - <a href="{% url 'room' room.id %}">{{room.name}}</a></h5>
         </div>
         {%endfor%}
     </div>
